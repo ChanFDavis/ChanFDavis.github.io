@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Chan Davis - Cybots</title> <!-- TODO: Change this to the actual project name -->
+	<title>Chan Davis - Cybots</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,36 +46,66 @@
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-sm-8 author-name">
-						<h2 class="heading wow animated fadeInUp">Project Name</h2>
-						<h4 class="subheading muted wow animated fadeInUp">[Languages Used]</h4>
+						<h1 class="heading big wow animated fadeInUp">Cybots</h1>
+						<h4 class="subheading muted wow animated fadeInUp">C#, Unity</h4>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
 						<p class="small muted-light wow animated fadeInUp">
-							Singleplayer game made with C# and the Unity engine. It involves maze generation via cellular automation and AI with
-							pathfinding.
-							
-							<br><br>
-							
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-						eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-						voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-						voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-						sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<em>Cybots</em> was a game solo-developed for a game design class. The overall gameplay and several requirements were given by the professor. The way in which we implemented those features were up to interpretation by the students. Also, any other additions to the game were welcome and I took advantage of that to add a little humor into the game.
+						</p>
+						<p class="small muted-light wow animated fadeInUp">
+							When you first start up the game, you will yourself in a dimly-lit maze. The controls are mapped to a controller. On the minimap that appears on the screen, you will see yourself as an arrow - yes, where it points is where you're currently looking. On that same map, you will see a blue square. That is your goal. You may also notice some dots moving around in the maze. These are the enemies you need to avoid; they are the Cybots themselves. If they see you, they will freeze you in place for a few seconds. Get cornered by several at once and you lose. Lastly, there are several crates to hide behind or jump on top of.
+						</p>
 					</div>
 				</div>
-			</div> <!-- col-md-6 author -->
+				<div class="row">
+					<div class="col-sm-8 author-name">
+						<h4 class="heading wow animated fadeInUp">Using Cellular Automation to Generate the Maze</h4>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<p class='small muted-light wow animated fadeInUp'>
+								One of the things I had the most fun implementing was the procedural generation of the game's maze. To do this, I used a modified version of the classic cellular automation algorithm, Conway's Game of Life. The modifications were mainly changing the death/birth values, as well as removing one of the conditionals. The idea for this game from the following website: <a href="https://blog.jrheard.com/procedural-dungeon-generation-cellular-automata">Jrheard's Blog</a>
+						</p>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-8 author-name'>
+						<h4 class='heading wow animated fadeInUp'>Enemy Types</h4>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<p class='small muted-light wow animated fadeInUp'>
+							Every enemy in this game has a unique personality reflected in their aesthetics and AI. These are: 
+						</p>
+						<ul class='muted-light' style="font-size: 110%;">
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Standard</strong>: Normal. Nothing special.</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Drunk</strong>: Has a chance to randomly stop chasing player. Vision impaired.</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Sassy</strong>: Stops to pose when you're looking at it</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Sneaky</strong>: Doesn't make sound</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Old</strong>: Slow and can't see very well</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Fast</strong>: Is fast. Enjoys chili dogs.</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Starchild</strong>: ALWAYS knows where you are. Oh geez, he comin'.</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Lonely</strong>: Follows you once it finds you.</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;"><strong>Stoner</strong>: Is slow. Has a delay before making any decisions. Vision impaired.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="col-md-4 col-md-offset-2">
-				<h3 class="heading wow animated fadeInUp">My Roles</h3>
-				<h4 class="no-margin wow animated fadeInUp">
+				<h4 class="heading wow animated fadeInUp">My Roles</h4>
+				<h5 class="no-margin wow animated fadeInUp">
 					<ul>
 						<li style="margin-top: 10px;">Software Engineer</li>
 						<li style="margin-top: 10px;">Texture Creator</li>
 					</ul>
-				</h4>
-				<h3 class="heading wow animated fadeInUp">Skills Gained</h3>
-				<h4 class="no-margin wow animated fadeInUp">
+				</h5>
+				<h4 class="heading wow animated fadeInUp">Skills Gained</h4>
+				<h5 class="no-margin wow animated fadeInUp">
 					<ul>
 						<li style="margin-top: 15px;">Using the Unity game engine</li>
 						<ul>
@@ -90,13 +120,51 @@
 						</ul>
 						<li style="margin-top: 15px;">Creating AI</li>
 					</ul>
-				</h4>
+				</h5>
 				
-				<h3 class="heading wow animated fadeInUp">Resources Used</h3>
-				<h4 class="no-margin wow animated fadeInUp">
+				<h4 class="heading wow animated fadeInUp">Resources Used</h4>
+				<h5 class="no-margin wow animated fadeInUp">
 					The Behavior Bricks Unity Asset
-				</h4>
-				
+				</h5>
+			</div>
+			<div class="col-md-10" style="margin-top: 25px;">
+				<div class='col-sm-8 author-name'>
+					<div class='row'>
+						<h4 class='heading wow animated fadeInUp'>Skills Gained</h4>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<p class='small muted-light wow animated fadeInUp'>
+							The first skill that I gained from developing this project is experience with the C# language. This was also the language we used in previous projects, so the usage here was no surprise. For this project, it was used to write the various scripts used in the Unity engine.
+						</p>
+						<p class='small muted-light wow animated fadeInUp'>
+							I also gained experience using the Unity engine itself through the development of this game. I had only previously used the Unity engine to convert the file types of some 3D models. In particular, I worked with the following Unity tools:
+						</p>
+						<ul class='muted-light' style="font-size: 110%;">
+							<li class="wow animated fadeInUp" style="margin-top: 10px;">Animation controller (keyframing, tweens, etc.)
+							</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;">Texturing</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;">Lighting</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;">Physics</li>
+							<li class="wow animated fadeInUp" style="margin-top: 10px;">AI and Decision Trees (using the Behavior Bricks
+								asset)</li>
+						</ul>
+					</div>
+				</div>
+					<div class='row'>
+						<div class='col-sm-8 author-name'>
+							<h4 class='heading wow animated fadeInUp'>Play the Game</h4>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='col-sm-12'>
+							<!-- TODO: Try to put the game's code in a canvas element here -->
+							<h4><span style="color: red;">TODO: Try to put the game's code in a canvas element here</span></h4>
+							<p class="small"><strong>Note to instructor:</strong> I plan on trying to add the game here to be playable on the site. However, I won't be to my desktop until after this is due and my laptop can't handle Unity.</p>
+						</div>
+					</div>				
+				</div>
 			</div>
 		</div>
 	</div>
